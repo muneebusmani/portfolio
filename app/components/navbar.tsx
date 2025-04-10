@@ -1,4 +1,3 @@
-"use client";
 import React, { JSX, ReactNode } from "react";
 
 // Extract common hover, transition, and scale styles into a shared class
