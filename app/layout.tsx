@@ -30,7 +30,7 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${robotoMono.variable} antialiased bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen`} // Apply Poppins as main and Roboto Mono as secondary font
+        className={`${poppins.variable} ${robotoMono.variable} antialiased bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen`}
       >
         {children}
       </body>

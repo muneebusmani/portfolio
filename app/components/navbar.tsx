@@ -1,3 +1,4 @@
+"use client"
 import React, { JSX, ReactNode } from "react";
 
 // Extract common hover, transition, and scale styles into a shared class
@@ -5,10 +6,11 @@ const commonNavLinkStyles = "hover:text-indigo-400 cursor-pointer transform tran
 
 type NavLinkProps = {
   children: ReactNode;
+  link: string;
 };
 
-const NavLink = React.memo(({ children }: NavLinkProps): JSX.Element => {
-  return <li className={commonNavLinkStyles}>{children}</li>;
+const NavLink = React.memo(({ children, link }: NavLinkProps): JSX.Element => {
+  return <li className={commonNavLinkStyles} onClick={() => { window.location.href = link }}>{children}</li>;
 });
 NavLink.displayName = "Nav link"
 
@@ -23,10 +25,10 @@ const Navbar = (): JSX.Element => {
 
         {/* Nav Links */}
         <ul className="flex space-x-6 text-sm">
-          <NavLink>About</NavLink>
-          <NavLink>Experience</NavLink>
-          <NavLink>Projects</NavLink>
-          <NavLink>Contact</NavLink>
+          <NavLink link="#about">About</NavLink>
+          <NavLink link="#experience">Experience</NavLink>
+          <NavLink link="#projects">Projects</NavLink>
+          <NavLink link="#contact">Contact</NavLink>
         </ul>
       </nav>
     </header>

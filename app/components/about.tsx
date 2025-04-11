@@ -1,10 +1,9 @@
-"use client"
 import Image from 'next/image'
 import React, { JSX } from 'react'
 
-const Main = (): JSX.Element => {
+const About = (): JSX.Element => {
   return (
-    <main className=" max-w-7xl mx-auto px-6 py-12  min-h-screen flex flex-col md:flex-row items-center justify-around gap-5">
+    <section id='about' className=" max-w-7xl mx-auto px-6 py-12  min-h-screen flex flex-col md:flex-row items-center justify-around gap-5">
       <section id='text' className="flex flex-col justify-center text-left animate-fade-in-up space-y-4">
         <h1 className="text-5xl font-extrabold text-white tracking-tight drop-shadow-[0_0_0.3rem_#ffffff40] transform transition duration-500 hover:scale-105 hover:text-indigo-400">
           Hi, I&rsquo;m Muneeb
@@ -28,8 +27,8 @@ const Main = (): JSX.Element => {
           />
         </div>
       </section>
-    </main>
+    </section>
   )
 }
 
-export default Main;
+export default About;
