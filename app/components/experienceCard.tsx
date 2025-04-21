@@ -13,7 +13,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
   duration,
   description,
 }) => (
-  <div className="bg-[#1e293b] p-6 rounded-xl shadow-md">
+  <div className="bg-[#1e293b] p-6 rounded-xl shadow-md hover:scale-[1.02] transition-transform">
     <h3 className="text-xl font-semibold">
       {role} @ {company}
     </h3>

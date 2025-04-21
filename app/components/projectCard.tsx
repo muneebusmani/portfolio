@@ -1,14 +1,7 @@
+import { Project } from "@/data/projects";
 import { JSX, memo } from "react";
 
-export interface Projects {
-  title: string;
-  description: string;
-  tech: string[];
-  liveLink?: string;
-  githubLink: string;
-}
-
-const ProjectCard: React.FC<Projects> = ({
+const ProjectCard: React.FC<Project> = ({
   title,
   description,
   tech,

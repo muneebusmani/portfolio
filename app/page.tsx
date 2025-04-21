@@ -1,6 +1,6 @@
 import { JSX } from "react";
 import Navbar from "./components/navbar";
-import Experience from "./components/experience";
+import Experiences from "./components/experience";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
@@ -11,7 +11,7 @@ const Home = (): JSX.Element => {
     <>
       <Navbar />
       <Hero />
-      <Experience />
+      <Experiences />
       <Projects />
       <Contact />
       <Footer />

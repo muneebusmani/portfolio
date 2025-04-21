@@ -11,9 +11,11 @@ const Hero = (): JSX.Element => {
         id="text"
         className="flex flex-col justify-center text-left animate-fade-in-up space-y-4"
       >
-        <h1 className="text-5xl font-extrabold text-white tracking-tight drop-shadow-[0_0_0.3rem_#ffffff40] transform transition duration-500 hover:scale-105 hover:text-indigo-400">
-          Hi, I&rsquo;m Muneeb
-        </h1>
+        <div className="relative inline-block">
+          <h1 className="text-5xl font-extrabold text-white tracking-tight drop-shadow-[0_0_0.3rem_#ffffff40] transform transition duration-500 hover:scale-105 hover:text-indigo-400  inline-block">
+            Hi, I&rsquo;m Muneeb
+          </h1>
+        </div>
         <h3 className="text-lg text-gray-300 leading-relaxed">
           I&rsquo;m a{" "}
           <span className="font-semibold text-white bg-gradient-to-r from-green-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">

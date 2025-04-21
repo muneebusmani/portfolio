@@ -1,33 +1,13 @@
-"use client";
-
-import { JSX, useEffect, useState } from "react";
-import axios from "axios";
+import { JSX } from "react";
 import ExperienceCard from "./experienceCard";
+import { experiences, Experience } from "@/data/experience";
 
-interface Experience {
-  role: string;
-  company: string;
-  duration: string;
-  description: string;
-}
-
-const Experience = (): JSX.Element => {
-  const [data, setData] = useState<Experience[]>([]);
-
-  useEffect(() => {
-    axios
-      .get<Experience[]>("/api/experience")
-      .then((res) => setData(res.data))
-      .catch((err) =>
-        console.error("Failed to fetch experience data:", err.message),
-      );
-  }, []);
-
+const Experiences = (): JSX.Element => {
   return (
     <section id="experience" className="py-16 px-4 md:px-16 text-white">
       <h2 className="text-3xl font-bold mb-10">Experience</h2>
       <div className="space-y-6">
-        {data.map(
+        {experiences.map(
           (exp: Experience, idx: number): JSX.Element => (
             <ExperienceCard key={idx} {...exp} />
           ),
@@ -37,4 +17,4 @@ const Experience = (): JSX.Element => {
   );
 };
 
-export default Experience;
+export default Experiences;
