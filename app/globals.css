@@ -1,8 +1,8 @@
 @import "tailwindcss";
 html {
   scroll-behavior: smooth;
-  font-family: var(--font-poppins);
+  font-family: "Poppins", sans-serif;
 }
 code {
-  font-family: var(--font-roboto-mono);
+  font-family: "Roboto Mono", monospace;
 }

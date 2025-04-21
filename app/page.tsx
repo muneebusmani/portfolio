@@ -1,16 +1,16 @@
 import { JSX } from "react";
 import Navbar from "./components/navbar";
-import About from "./components/about";
 import Experience from "./components/experience";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import Hero from "./components/hero";
 
 const Home = (): JSX.Element => {
   return (
     <>
       <Navbar />
-      <About />
+      <Hero />
       <Experience />
       <Projects />
       <Contact />

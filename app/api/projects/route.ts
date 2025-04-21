@@ -1,0 +1,70 @@
+import { Projects } from "@/app/components/projectCard";
+import { NextResponse } from "next/server";
+
+export async function GET(): Promise<NextResponse<Projects[]>> {
+  const projects: Projects[] = [
+    // {
+    //   title: "CMS Platform",
+    //   description:
+    //     "Built a dynamic CMS using Laravel 12 and Inertia.js. Includes media uploads, polymorphic relationships, and role-based access.",
+    //   tech: ["Laravel", "React", "Inertia.js"],
+    //   liveLink: "#",
+    //   githubLink: "#",
+    // },
+    // {
+    //   title: "Pet Adoption Platform",
+    //   description:
+    //     "A frontend-first app for pet listings using React, TypeScript, and Tailwind. Integrates with a backend API for data.",
+    //   tech: ["React", "TypeScript", "Tailwind"],
+    //   liveLink: "#",
+    //   githubLink: "#",
+    // },
+    {
+      title: "JusticiaLaw",
+      description:
+        "Developed a responsive multi-page website for a law firm using PHP, JavaScript, and CSS. Features included service listings, contact form, and firm details. Focused on clean UI, accessibility, and structured backend integration.",
+      tech: ["PHP", "MYSQL"],
+      githubLink: "https://github.com/muneebusmani/Lawyers-Website",
+    },
+
+    {
+      title: "Nexus Communication Website",
+      description:
+        "The Nexus Communication System is a role-based enterprise application designed to streamline operations for a telecommunications company. Built using C# and ASP.NET MVC, it features a structured architecture with distinct panels tailored for customers, administrators, and accounts personnel.",
+      tech: ["C#", "ASP.NET", "Bootstrap", "MSSQL", "EF Core"],
+      githubLink:
+        "https://github.com/muneebusmani/Nexus_Communication-eproject-",
+    },
+    {
+      title: "Learn Skills",
+      description:
+        "A Learning Management System, Written in Next.js(migrated from static html, css into fullstack application in nextjs)",
+      tech: ["Next", "Typescript", "Bootstrap"],
+      liveLink: "https://learnskills.muneebusmani.com",
+      githubLink: "https://github.com/muneebusmani/learnskills",
+    },
+    {
+      title: "Olink(Digital Agency Website)",
+      description:
+        "A Digital Agency website written in pure html, css and bootstrap. migrated into Nextjs, Typescript for better performance",
+      tech: ["Next", "Typescript", "Bootstrap"],
+      liveLink: "https://olink.muneebusmani.com",
+      githubLink: "https://github.com/muneebusmani/olink",
+    },
+    {
+      title: "Todo List",
+      description: "A Todo App Built in Laravel blade with user based notes.",
+      tech: ["Laravel", "Blade", "MySQL", "PHP"],
+      githubLink: "https://github.com/muneebusmani/laravel-todolist",
+    },
+    {
+      title: "Todo Cli",
+      description:
+        "A CLI Based, Cross Platform, Clickup like Task management App written in Python",
+      tech: ["Python"],
+      githubLink: "https://github.com/muneebusmani/todocli",
+    },
+  ];
+
+  return NextResponse.json(projects);
+}

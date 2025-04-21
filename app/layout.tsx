@@ -18,8 +18,8 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "My Portfolio in Next",
+  title: "Muneeb Usmani | Portfolio",
+  description: "Full Stack Developer Portfolio",
 };
 
 const RootLayout = ({
