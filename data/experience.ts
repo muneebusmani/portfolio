@@ -16,7 +16,7 @@ export const experiences: Experience[] = [
   {
     role: "PHP and Laravel Developer",
     company: "Increase Rev",
-    duration: "Nov 2024 - Jan 2025",
+    duration: "Nov 2024 - Feb 2025",
     description:
       "Assisted in building admin dashboards with React and Laravel Blade. Maintained legacy code and migrated old APIs to Laravel 11.",
   },

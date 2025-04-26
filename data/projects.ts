@@ -42,7 +42,7 @@ export const projects: Project[] = [
     title: "Learn Skills",
     description:
       "A Learning Management System, Written in Next.js(migrated from static html, css into fullstack application in nextjs)",
-    tech: ["Next", "Typescript", "Bootstrap"],
+    tech: ["Next.JS", "Typescript", "Bootstrap"],
     liveLink: "https://learnskills.muneebusmani.com",
     githubLink: "https://github.com/muneebusmani/learnskills",
   },
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     title: "Olink(Digital Agency Website)",
     description:
       "A Digital Agency website written in pure html, css and bootstrap. migrated into Nextjs, Typescript for better performance",
-    tech: ["Next", "Typescript", "Bootstrap"],
+    tech: ["Next.JS", "Typescript", "Bootstrap"],
     liveLink: "https://olink.muneebusmani.com",
     githubLink: "https://github.com/muneebusmani/olink",
   },
