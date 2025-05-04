@@ -12,33 +12,37 @@ const Hero = (): JSX.Element => {
         className="flex flex-col justify-center text-left animate-fade-in-up space-y-4"
       >
         <div className="relative inline-block">
-          <h1 className="text-5xl font-extrabold text-white tracking-tight drop-shadow-[0_0_0.3rem_#ffffff40] transform transition duration-500 hover:scale-105 hover:text-indigo-400  inline-block">
+          <h1 className="text-5xl font-extrabold text-white tracking-tight drop-shadow-[0_0_0.3rem_#ffffff40] transform transition duration-500 hover:scale-105 hover:text-indigo-400 inline-block">
             Hi, I&rsquo;m Muneeb
           </h1>
         </div>
         <h3 className="text-lg text-gray-300 leading-relaxed">
           I&rsquo;m a{" "}
           <span className="font-semibold text-white bg-gradient-to-r from-green-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">
-            passionate fullstack developer
+            fullstack developer
           </span>{" "}
-          currently gaining hands-on experience through real-world projects and
-          internships.
-          <br />I work with{" "}
+          currently working professionally and sharpening my skills by building
+          real-world applications.
+          <br />I specialize in{" "}
           <span className="font-semibold text-white bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-600 bg-clip-text text-transparent">
             Laravel
           </span>
           ,{" "}
           <span className="font-semibold text-white bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
             React / Next.js
-          </span>{" "}
-          and{" "}
+          </span>
+          , and{" "}
           <span className="font-semibold text-white bg-gradient-to-r from-orange-400 via-amber-500 to-yellow-600 bg-clip-text text-transparent">
             REST APIs
+          </span>
+          , and I also work with the{" "}
+          <span className="font-semibold text-white bg-gradient-to-r from-green-400 via-emerald-500 to-lime-500 bg-clip-text text-transparent">
+            MERN stack
           </span>{" "}
-          to build clean, responsive, and dynamic web apps.
+          to deliver robust, scalable solutions.
           <br />
-          I’m focused on writing clean code, learning fast, and building
-          meaningful products.
+          I’m focused on writing clean, maintainable code and continuously
+          learning to deliver impactful products.
         </h3>
       </section>
 
